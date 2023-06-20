@@ -1,12 +1,9 @@
-# Membuat stack kosong
 stack = []
 
-# Fungsi untuk menambahkan barang ke dalam stack
 def tambah_barang(stack, barang_baru):
     stack.append(barang_baru)
     print(f"{barang_baru} berhasil ditambahkan ke dalam stack.")
 
-# Fungsi untuk menghapus barang terakhir dari stack
 def hapus_barang_terakhir(stack):
     if len(stack) == 0:
         print("Stack kosong, tidak ada barang yang dapat dihapus.")
@@ -14,7 +11,6 @@ def hapus_barang_terakhir(stack):
         barang_terakhir = stack.pop()
         print(f"{barang_terakhir} berhasil dihapus dari stack.")
 
-# Fungsi untuk menampilkan barang teratas di dalam stack
 def tampilkan_barang_teratas(stack):
     if len(stack) == 0:
         print("Stack kosong, tidak ada barang yang dapat ditampilkan.")
@@ -22,7 +18,6 @@ def tampilkan_barang_teratas(stack):
         barang_teratas = stack[-1]
         print(f"Barang teratas di dalam stack adalah {barang_teratas}.")
 
-# Menu utama
 while True:
     print("\nGudang saat ini:", stack)
     print("Menu:")
